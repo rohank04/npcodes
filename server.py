@@ -2,7 +2,7 @@ from socket import *
 
 serverName = ''
 serverPort = 12000
-serverSocket = socket(AF_INET, SOCK_STREAM)
+serverSocket = socket(AF_INET6, SOCK_STREAM)
 serverSocket.bind((serverName, serverPort))
 serverSocket.listen(4)
 print("Server is ready")
